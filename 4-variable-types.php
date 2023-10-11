@@ -13,7 +13,7 @@
     $many = 2.2888800;
     $many_2 = 2.2111200;
     $few = $many + $many_2;
-    print(.$many + $many_2 = $few<br>.);
+    print($many + $many_2 = $few);
     
     if (TRUE)
         print("This will always print<br>");
@@ -22,7 +22,7 @@
 
 
     $true_num = 3 + 0.14159;
-    $true_str = "Tried and true"
+    $true_str = "Tried and true";
     $true_array[49] = "An array element";
     $false_array = array();
     $false_null = NULL;
@@ -52,8 +52,7 @@
     <?php
     $x = 4;
     function assignx () {
-    PHP
-    33
+        
     $x = 0;
     print "\$x inside function is $x.
     ";
@@ -90,10 +89,7 @@
         STATIC $count = 0;
         $count++;
         print $count;
-        print "
-       ";
-       PHP
-       35
+        print "";
        }
        keep_track();
        keep_track();
