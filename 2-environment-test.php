@@ -6,10 +6,10 @@
     <title>Envi testing</title>
 </head>
 <body>
-    <?php echo "Do I work yet? hi there";?>
+    <?php echo " ahi there";?>
 
-    <?php echo "Work already please "?>
-    <?php echo "Work already please "?>
+    <?php echo "Wody please "?>
+    <?php echo "already please "?>
     <?php echo "Work already please "?>
     
     
