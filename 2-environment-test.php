@@ -6,11 +6,11 @@
     <title>Envi testing</title>
 </head>
 <body>
-    <?php echo " ahi there";?>
+    <?php echo " a hi there <br>";?>
 
-    <?php echo "Wody please "?>
-    <?php echo "already please "?>
-    <?php echo "Work already please "?>
+    <?php echo "Wody please <br> "?>
+    <?php echo "already please <br> "?>
+    <?php echo "  <br>" ?>
     
     
     
