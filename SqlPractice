@@ -1,0 +1,43 @@
+CREATE DATABASE StudentRecord;
+
+USE  StudentRecord;
+
+CREATE TABLE Student (
+    StudentID INT PRIMARY KEY,
+    FirstName varchar(255),
+    LastName varchar(255),
+    DateOfBirth DATE,
+    Email varchar(255),
+    Phone varchar(255)
+    
+);
+CREATE TABLE Enrollment (
+    EnrollmentID INT PRIMARY KEY,
+    StudentID INT,
+    CourseID INT,
+    EnrollmentDate DATE,
+    Grade INT,
+    FOREIGN KEY (StudentID) REFERENCES Student(StudentID),
+    FOREIGN KEY (CourseID) REFERENCES Course(CourseID)
+    
+);
+CREATE TABLE Course (
+    CourseID INT PRIMARY KEY,
+    CourseName varchar(255),
+    Credits varchar(255)
+    
+
+);
+CREATE TABLE Instructor(
+    InstructorID INT PRIMARY KEY,
+    FirstName varchar(255),
+    LastName varchar(255),
+    Email varchar(255),
+    Phone varchar(255)
+);
+
+INSERT INTO Student VALUES (1,"Calel Eizen","Rillera","2002-11-26","caleleizengrillera@gmail.com","09608960572" );
+INSERT INTO Course VALUES (100,"CIT17","3");
+INSERT INTO Instructor VALUES (200,"Patrick","Star","rocklover@gmail.com","09090909091");
+INSERT INTO Enrollment VALUES (300,1,100,"2023-11-13","90");
+
