@@ -1,5 +1,5 @@
 CREATE DATABASE StudentRecord;
-
+-- DONT FORGET TO USE ; 
 USE  StudentRecord;
 
 CREATE TABLE Student (
