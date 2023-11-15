@@ -11,16 +11,7 @@ CREATE TABLE Student (
     Phone varchar(255)
     
 );
-CREATE TABLE Enrollment (
-    EnrollmentID INT PRIMARY KEY,
-    StudentID INT,
-    CourseID INT,
-    EnrollmentDate DATE,
-    Grade INT,
-    FOREIGN KEY (StudentID) REFERENCES Student(StudentID),
-    FOREIGN KEY (CourseID) REFERENCES Course(CourseID)
-    
-);
+
 CREATE TABLE Course (
     CourseID INT PRIMARY KEY,
     CourseName varchar(255),
@@ -34,6 +25,17 @@ CREATE TABLE Instructor(
     LastName varchar(255),
     Email varchar(255),
     Phone varchar(255)
+);
+
+CREATE TABLE Enrollment (
+    EnrollmentID INT PRIMARY KEY,
+    StudentID INT,
+    CourseID INT,
+    EnrollmentDate DATE,
+    Grade INT,
+    FOREIGN KEY (StudentID) REFERENCES Student(StudentID),
+    FOREIGN KEY (CourseID) REFERENCES Course(CourseID)
+    
 );
 
 INSERT INTO Student VALUES (1,"Calel Eizen","Rillera","2002-11-26","caleleizengrillera@gmail.com","09608960572" );
