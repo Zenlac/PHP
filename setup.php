@@ -2,7 +2,7 @@
     $hostname = "localhost";
     $username = "root";
     $password ="";
-    $database ="Rillera";
+    $database ="rillera";
 
     $conn = new mysqli($hostname, $username, $password, $database);
 
@@ -22,7 +22,7 @@
         }
     }
 
-    $sql = "CREATE DATABASE Rillera; ";
+    $sql = "CREATE DATABASE Rillera";
     createTable($conn, $sql);
 
     $sql = "CREATE TABLE Student (
